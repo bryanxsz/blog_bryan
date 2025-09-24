@@ -39,7 +39,9 @@
         foreach($_GET as $indice => $dado){
             $$indice = limparDados($dado);
         }
-        
+                
+        date_default_timezone_set("America/Sao_Paulo");
+
         $data_atual = date('Y-m-d H:i:s');
         
         $criterio = [
